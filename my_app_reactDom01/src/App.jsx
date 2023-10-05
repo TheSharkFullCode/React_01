@@ -3,6 +3,7 @@ import ComponentReyes from "./component/ComponentReyes";
 import atanagildo from "./assets/reyes/rey_atanagildo.png";
 import sisebuto from "./assets/reyes/rey_sisebuto.png";
 import leovigildo from "./assets/reyes/rey_leogivildo.png";
+import { ComponentState } from "./component/Ejercicio_02_react/ComponentState";
 
 
 function App() {
@@ -17,24 +18,37 @@ function App() {
         <div className='flex gap-[30px]  '>
 
         <span className="block mb-2 font-bold"> Nombre del Alumno:</span>
-        <input type="text" value={nombre} className='rounded' />
+        <input type="text" value={nombre} className='rounded' readOnly />
         <label htmlFor="" className="block mb-2 font-bold">Dirección:</label>
-        <input type='text' className='rounded'/>
+        <input type='text' className='rounded' />
         <label htmlFor="" className="block mb-2 font-bold">Código postal</label>
         <input type="text"  className=" rounded"/>
         </div>
         <img src={reyRomano} alt="reyromano" className='w-[150px] h-[150px]' />
         {/* <img src={atanagildo} alt="" /> */}
         
-        <div className=" flex gap-10 mt-[50px] bg-[#f28cdf] justify-center">
+        <div className=" flex gap-10 mt-[50px] bg-[#f3c1ea] justify-center">
 
           
-            <ComponentReyes img={atanagildo} name={'Rey_atanagildo'} className={'bg-[orange] w-[300px] h-[400px] rounded-[8px] flex flex-col gap-8 items-center'}/>
-            <ComponentReyes img={sisebuto} name={'Rey_sisebuto'} className={'bg-[orange] w-[300px] h-[400px] rounded-[8px] flex flex-col gap-8 items-center'}/>
-            <ComponentReyes img={leovigildo} name={'Rey_leovigildo'} className={'bg-[orange] w-[300px] h-[400px] rounded-[8px] flex flex-col gap-8 items-center'}/>
+            <ComponentReyes img={atanagildo} name={'Rey_atanagildo'} className={'bg-[orange] w-[300px] h-[400px] rounded-[8px] flex flex-col gap-8 items-center text-[32px] font-medium'}/>
+            <ComponentReyes img={sisebuto} name={'Rey_sisebuto'} className={'bg-[orange] w-[300px] h-[400px] rounded-[8px] flex flex-col gap-8 items-center text-[32px] font-medium'}/>
+            <ComponentReyes img={leovigildo} name={'Rey_leovigildo'} className={'bg-[orange] w-[300px] h-[400px] rounded-[8px] flex flex-col gap-8 items-center text-[32px] font-medium'}/>
 
         </div>
-    </div>
+
+      <div className="mt-[10px] bg-[yellow]">
+
+        <span className="text-[40px] font-medium"> 
+       Ejercicio 02 practicando los estados.
+        (USE REF:)
+
+        </span>
+         <ComponentState img={atanagildo} className={leovigildo} text={''} />
+
+
+      </div>
+        
+        </div>
   )
 }
 

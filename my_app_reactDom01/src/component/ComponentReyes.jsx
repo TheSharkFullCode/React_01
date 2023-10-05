@@ -9,6 +9,8 @@ export const ComponentReyes = ({img,name,className}) => {
         
         <img src={img} alt="" />
         <span>{name}</span>
+
+    
     </div>
 
   )
