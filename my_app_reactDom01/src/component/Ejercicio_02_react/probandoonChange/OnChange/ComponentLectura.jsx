@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import { ComponentContador } from '../Haciendo_unContador/ComponentContador';
 
 
 
@@ -20,6 +21,8 @@ export const ComponentLectura = () => {
             <input type="text" name="" id="" onChange={lectura} />
 
             <span ref={refCaja} > {valueCurrent}</span>
+            
+            <ComponentContador/>
     </div>
   )
 }
