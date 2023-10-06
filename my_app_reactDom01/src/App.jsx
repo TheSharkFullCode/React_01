@@ -4,6 +4,7 @@ import atanagildo from "./assets/reyes/rey_atanagildo.png";
 import sisebuto from "./assets/reyes/rey_sisebuto.png";
 import leovigildo from "./assets/reyes/rey_leogivildo.png";
 import { ComponentState } from "./component/Ejercicio_02_react/ComponentState";
+import { ComponentLectura } from "./component/Ejercicio_02_react/probandoonChange/ComponentLectura";
 
 
 function App() {
@@ -25,8 +26,7 @@ function App() {
         <input type="text"  className=" rounded"/>
         </div>
         <img src={reyRomano} alt="reyromano" className='w-[150px] h-[150px]' />
-        {/* <img src={atanagildo} alt="" /> */}
-        
+          <span className="font-semibold text-1xl">En el Ejercicio 1 del componente 1 y 2 aprendimos  a  crear componentes input y a pasar imagenes ya en el ejercicio 2 aprendimos a crear estados y pasamos de ser estaticos a dinamicos</span>        
         <div className=" flex gap-10 mt-[50px] bg-[#f3c1ea] justify-center">
 
           
@@ -45,10 +45,10 @@ function App() {
         </span>
          <ComponentState img={atanagildo} className={leovigildo} text={''} />
 
-
+        <ComponentLectura/>
       </div>
         
-        </div>
+      </div>
   )
 }
 
